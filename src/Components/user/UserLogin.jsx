@@ -17,7 +17,7 @@ const UserLogin = () => {
       toast.success("Signed in successfully");
       navigate("/user/dashboard");
     } catch (error) {
-      toast.error("Invalid credentials");
+      toast.error(error?.response?.data?.message ?? "Invalid credentials");
     }
   };
 
@@ -28,14 +28,14 @@ const UserLogin = () => {
           onSubmit={handleSubmit}
           className="bg-white/80 backdrop-blur-xl border border-zinc-200 rounded-2xl shadow-[0_20px_50px_-20px_rgba(0,0,0,0.25)] px-8 py-10"
         >
-        <div className="mb-8 text-center">
-  <h1 className="text-2xl font-semibold tracking-tight text-zinc-900">
-    Welcome back
-  </h1>
-  <p className="text-sm text-zinc-500 mt-1">
-    Sign in to continue to TaskNova.
-  </p>
-</div>
+          <div className="mb-8 text-center">
+            <h1 className="text-2xl font-semibold tracking-tight text-zinc-900">
+              Welcome back
+            </h1>
+            <p className="text-sm text-zinc-500 mt-1">
+              Sign in to continue to TaskNova.
+            </p>
+          </div>
 
           <div className="mb-5">
             <label className="block text-sm font-medium text-zinc-700 mb-1">

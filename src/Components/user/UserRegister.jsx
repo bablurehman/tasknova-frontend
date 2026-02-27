@@ -18,7 +18,7 @@ const UserRegister = () => {
       toast.success("Account created successfully");
       navigate("/");
     } catch (error) {
-      toast.error("Registration failed");
+      toast.error(error?.response?.data?.message ?? "Registration failed");
     }
   };
 
@@ -29,14 +29,14 @@ const UserRegister = () => {
           onSubmit={handleSubmit}
           className="bg-white/80 backdrop-blur-xl border border-zinc-200 rounded-2xl shadow-[0_20px_50px_-20px_rgba(0,0,0,0.25)] px-8 py-10"
         >
-     <div className="mb-8 text-center">
-  <h1 className="text-2xl font-semibold tracking-tight text-zinc-900">
-    Create your TaskNova account
-  </h1>
-  <p className="text-sm text-zinc-500 mt-1">
-    Start managing your tasks in one place.
-  </p>
-</div>
+          <div className="mb-8 text-center">
+            <h1 className="text-2xl font-semibold tracking-tight text-zinc-900">
+              Create your TaskNova account
+            </h1>
+            <p className="text-sm text-zinc-500 mt-1">
+              Start managing your tasks in one place.
+            </p>
+          </div>
 
           <div className="mb-5">
             <label className="block text-sm font-medium text-zinc-700 mb-1">
