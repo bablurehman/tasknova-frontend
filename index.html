@@ -1,45 +1,54 @@
+<!doctype html>
+<html lang="en">
 <head>
-  <!-- Basic -->
+
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="qetdqq6GCiOCip-vrm0Ykfx_KJZKJG_pjopbW8DN1nQ" />
   <meta name="theme-color" content="#4f46e5" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
-  <!-- Primary SEO -->
-  <title>TaskNova – Best Online Task Management & Productivity App for Teams</title>
+  <!-- Title -->
+  <title>TaskNova – Online Task Management & Productivity App for Teams</title>
 
+  <!-- SEO Description -->
   <meta
     name="description"
-    content="TaskNova is a powerful online task management and productivity app for individuals, startups, and remote teams. Organize tasks, track projects, assign work, and boost productivity with an intuitive task dashboard."
+    content="TaskNova is a modern cloud-based task management and productivity app for individuals, startups, and remote teams. Organize tasks, assign work, track projects, and improve workflow efficiency in one powerful dashboard."
   />
 
-  <!-- Refined Semantic Keywords (Not Spammy) -->
+  <!-- SEO Keywords -->
   <meta
     name="keywords"
-    content="task management software, online task manager for teams, productivity tracking app, project management tool for startups, cloud task management system, team collaboration software, daily task planner app, kanban board task manager, agile project tracking tool, remote team work management, employee task tracking software, small business project management app, free online task organizer, real time task monitoring system, workflow management platform, SaaS productivity application, smart task dashboard, work assignment tracking tool"
+    content="task management app, online task manager, productivity app for teams, project management software, team collaboration tool, daily task planner app, to do list application, cloud task management system, startup productivity software, remote team task tracker, employee task management tool, agile project tracking app, kanban board task manager, workflow management platform, business task organizer, SaaS productivity application"
   />
 
   <meta name="author" content="TaskNova Team" />
   <link rel="canonical" href="https://tasknovaa.vercel.app/" />
 
-  <!-- Open Graph -->
+  <!-- Favicon (Correct Setup) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph (Facebook / LinkedIn) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="TaskNova – Online Task Management App for Teams & Startups" />
-  <meta property="og:description" content="Manage projects, assign tasks, track progress, and improve productivity with TaskNova’s smart task management system." />
-  <meta property="og:url" content="https://tasknovaa.vercel.app//" />
-  <meta property="og:image" content="https://tasknovaa.vercel.app//preview.png" />
+  <meta property="og:site_name" content="TaskNova" />
+  <meta property="og:title" content="TaskNova – Smart Task Management App for Teams" />
+  <meta property="og:description" content="Manage projects, assign tasks, track productivity, and collaborate efficiently with TaskNova." />
+  <meta property="og:url" content="https://tasknovaa.vercel.app/" />
+  <meta property="og:image" content="https://tasknovaa.vercel.app/preview.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TaskNova – Smart Task Management & Productivity App" />
-  <meta name="twitter:description" content="Organize tasks, track projects, and manage team productivity with TaskNova." />
-  <meta name="twitter:image" content="https://tasknovaa.vercel.app//preview.png" />
+  <meta name="twitter:title" content="TaskNova – Online Task & Project Management Tool" />
+  <meta name="twitter:description" content="Boost productivity with TaskNova's cloud-based task and workflow management system." />
+  <meta name="twitter:image" content="https://tasknovaa.vercel.app/preview.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <!-- Performance -->
+  <link rel="preconnect" href="https://tasknovaa.vercel.app" crossorigin />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -47,10 +56,10 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "TaskNova",
-    "url": "https://tasknovaa.vercel.app//",
+    "url": "https://tasknovaa.vercel.app/",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "description": "TaskNova is a cloud-based task management and project tracking application designed for teams, startups, and businesses.",
+    "description": "TaskNova is a cloud-based task management and productivity web application for teams and startups.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -58,4 +67,16 @@
     }
   }
   </script>
+
 </head>
+
+<body>
+
+  <!-- React Root -->
+  <div id="root"></div>
+
+  <!-- Vite Entry -->
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>
