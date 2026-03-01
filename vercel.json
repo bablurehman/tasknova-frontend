@@ -5,7 +5,6 @@
       "destination": "/index.html"
     }
   ],
-
   "headers": [
     {
       "source": "/(.*)",
@@ -32,11 +31,10 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tasknovaa.vercel.app; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tasknovaa.vercel.app; font-src 'self' data:; connect-src 'self' https://tasknova-backend.onrender.com http://localhost:3000 ws://localhost:3000; frame-ancestors 'none';"
         }
       ]
     },
-
     {
       "source": "/sitemap.xml",
       "headers": [
@@ -46,7 +44,6 @@
         }
       ]
     },
-
     {
       "source": "/robots.txt",
       "headers": [
